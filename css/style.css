@@ -74,12 +74,13 @@ main {
 }
 
 .hero {
-    height: 30rem;
+    height: 40rem;
     width: 100%;
     position: relative;
-    background-image: url(../img/alec-favale-Ivzo69e18nk-unsplash\ \(1\).jpg);
-    background-size: contain;
-    color: #f0f4ef;
+    background-image: url(../img/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,8 +123,8 @@ main {
     justify-content: center;
     text-align: center;
     position: absolute;
-    left: 36%;
-    top: 48%;
+    left: 31.5%;
+    top: 63%;
     
 }
 
@@ -256,6 +257,7 @@ footer {
 }
 
 @media (max-width: 430px){
+
     .pet-photos {
         flex-direction: column;
         align-items: center;
@@ -265,7 +267,7 @@ footer {
     .pet-button-con {
         width: 100%;
         left: 0;
-        top: 26%;
+        top: 33%;
     }
 
     .pet-example-con {
@@ -294,6 +296,8 @@ footer {
 
     main {
         position: relative;
+        
+        
     }
  
     .hamburger-con {
@@ -366,5 +370,9 @@ footer {
         font-size: 2rem;
         margin-right: 1rem;
         margin-top: 1rem;
+    }
+
+    .hero {
+        background-position: center;
     }
 }
