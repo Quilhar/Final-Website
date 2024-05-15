@@ -65,12 +65,21 @@ main {
 .links {
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
 }
 
 .links li {
     margin-right: 5em;
     font-size: 1.25rem;
+}
+
+.links li button {
+    font-size: 1.25rem;
+    color: #f0f4ef;
+    background-color: #344966;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
 }
 
 .hero {
@@ -80,6 +89,7 @@ main {
     background-image: url(../img/krista-mangulsone-9gz3wfHr65U-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: black;
     display: flex;
     align-items: center;
@@ -105,16 +115,16 @@ main {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
 }
 
 .hero-subtitle {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .hero-subtext {
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 .pet-button-con {
@@ -123,7 +133,7 @@ main {
     justify-content: center;
     text-align: center;
     position: absolute;
-    left: 31.5%;
+    left: 40%;
     top: 63%;
     
 }
@@ -372,7 +382,5 @@ footer {
         margin-top: 1rem;
     }
 
-    .hero {
-        background-position: center;
-    }
+
 }
