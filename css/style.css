@@ -382,5 +382,12 @@ footer {
         margin-top: 1rem;
     }
 
-
+    .hamburger-option button {
+        font-size: 1.25rem;
+        color: #f0f4ef;
+        background-color: #0d1821;
+        border: none;
+        padding: .5rem;
+        border-radius: 10px;
+    }
 }
