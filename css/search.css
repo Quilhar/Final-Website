@@ -1,0 +1,123 @@
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inter-font;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f4ef;
+}
+
+body {
+    background-color: #f0f4ef;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1821;
+    color: #f0f4ef;
+    padding: 2rem 1rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-left i {
+    margin-left: 5em;
+}
+
+.web-name {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links li {
+    margin-right: 5em;
+    font-size: 1.25rem;
+
+}
+
+.links li button {
+    font-size: 1.25rem;
+    color: #f0f4ef;
+    background-color: #344966;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.hamburger-button {
+    display: none;
+    background-color: transparent;
+    border: transparent;
+}
+
+.hamburger-con {
+    display: none;
+}
+
+.hamburger-option {
+    display: none;
+}
+
+footer {
+    display: flex;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #0d1821;
+    color: #f0f4ef;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+}
+
+.number {
+    margin-right: 1.25rem;
+}
+
+.copyright {
+    margin-right: 1.25rem;
+}
+
