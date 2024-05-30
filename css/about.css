@@ -43,7 +43,6 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    flex-direction: row;
 }
 
 .header-left {
@@ -125,13 +124,154 @@ footer {
 .hero {
     height: 40rem;
     width: 100%;
+    background-image: url(../img/andrew-s-ouo1hbizWwo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 8rem;
+
 }
 
-.hero img {
-    height: 100%;
-    width: 100%;
+.hero p {
+    transform: rotate(-7.5deg);
 }
+
+.txt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.about-title {
+    font-size: 4.5rem;
+}
+
+.about-txt {
+    margin-top: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.signature {
+    display: flex;
+    justify-content: right;
+    width: 70%;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 10rem;
+}
+
+@media (max-width: 430px){
+    .contact-info {
+        font-size: .57rem;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+        color: #f0f4ef;
+        margin-left: none;
+        margin-right: 2rem;
+        font-size: 1.25rem;
+    }
+
+    .hamburger-con {
+        display: none;
+        position: absolute;   
+        z-index: 1;
+        background-color: #344966;
+        width: 50%;
+        height: 60%;
+        flex-direction: column;
+        left: 50%;
+        top: 0;
+        border-radius: 10px;
+    
+    }
+
+    .hamburger-option {
+        display: flex;
+        font-size: 1.75rem;
+        margin-left: .5rem;
+    
+    }
+
+    .hamburger-option a {
+        margin-bottom: 15px;
+    }
+
+    .hamburger-button {
+        font-size: 25px;
+ 
+    }
+
+    .header-left i {
+        margin-left: 2em;
+    }
+    
+    .web-name {
+        margin-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .exit {
+        display: flex;
+        justify-content: right;
+        margin-bottom: 2rem;
+    }
+    
+    .exit button {
+        color: #f0f4ef;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .hamburger-option button {
+        font-size: 1.25rem;
+        color: #f0f4ef;
+        background-color: #0d1821;
+        border: none;
+        padding: .5rem;
+        border-radius: 10px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        font-size: 3rem;
+
+    }   
+
+    .about-txt {
+        font-size: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .signature {
+        font-size: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .txt {
+        margin-top: 6rem;
+    }
+}   
