@@ -45,6 +45,16 @@ main {
     justify-content: center;
 }
 
+.items {
+    transition: all .2s ease-in-out;
+}
+
+.items:hover {
+
+    transform: scale(1.25);
+}
+
+
 .header-left {
     display: flex;
     flex-direction: row;

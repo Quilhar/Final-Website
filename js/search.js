@@ -21,4 +21,8 @@ exitBtn.addEventListener('click', () => {
 
 })
 
-// 
+// search button 
+
+const submitBtn = document.querySelector(".search-button")
+const results = document.querySelector(".result-con")
+const 

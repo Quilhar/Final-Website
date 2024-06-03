@@ -60,7 +60,9 @@ main {
 .web-name {
     margin-left: 1rem;
     font-size: 1.25rem;
+
 }
+
 
 .links {
     display: flex;
@@ -80,6 +82,15 @@ main {
     border: none;
     padding: .5rem;
     border-radius: 10px;
+}
+
+.items {
+    transition: all .2s ease-in-out;
+}
+
+.items:hover {
+
+    transform: scale(1.25);
 }
 
 .hero {

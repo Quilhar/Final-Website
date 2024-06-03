@@ -41,6 +41,7 @@ header {
 main {
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -121,3 +122,101 @@ footer {
     margin-right: 1.25rem;
 }
 
+.items {
+    transition: all .2s ease-in-out;
+}
+
+.items:hover {
+
+    transform: scale(1.25);
+}
+
+h1 {
+    margin-top: 5rem;
+    font-size: 4.5rem;
+}
+
+.info {
+    margin-top: 3rem;
+    font-size: 1.5rem;    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.species {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.species p {
+    margin-right: 1rem;
+}
+
+.sex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.sex p {
+    margin-right: 1rem;
+}
+
+.distance {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.distance p {
+    margin-right: 1rem;
+}
+
+.zip {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.zip p {
+    margin-right: 1rem;
+}
+
+.found {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+
+
+.search-button {
+    font-size: 2rem;
+    color: #f0f4ef;
+    background-color: #344966;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
