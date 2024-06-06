@@ -80,6 +80,8 @@ submitBtn.addEventListener('click', () => {
         results.style.display = "none"
     }
 
+
+
     randomName()
     randomAge()
     randomSex()

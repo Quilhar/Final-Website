@@ -6,7 +6,7 @@
     font-variation-settings:
       "slnt" 0;
 }
-
+  
 * {
     margin: 0;
     padding: 0;
@@ -14,19 +14,33 @@
     
 }
 
-ul {
-    list-style: none;
+p {
+    font-size: 1.25rem;
 }
 
-a {
-    text-decoration: none;
-    color: #f0f4ef;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 2px solid black;
+}
+  
+.pet-background {
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 body {
     background-color: #f0f4ef;
 }
-
 
 header {
     display: flex;
@@ -41,7 +55,6 @@ header {
 main {
     display: flex;
     align-items: center;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
 }
@@ -61,7 +74,9 @@ main {
 .web-name {
     margin-left: 1rem;
     font-size: 1.25rem;
+
 }
+
 
 .links {
     display: flex;
@@ -72,7 +87,6 @@ main {
 .links li {
     margin-right: 5em;
     font-size: 1.25rem;
-
 }
 
 .links li button {
@@ -84,18 +98,22 @@ main {
     border-radius: 10px;
 }
 
-.hamburger-button {
-    display: none;
-    background-color: transparent;
-    border: transparent;
+.items {
+    transition: all .2s ease-in-out;
 }
 
-.hamburger-con {
-    display: none;
+.items:hover {
+
+    transform: scale(1.25);
 }
 
-.hamburger-option {
-    display: none;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f4ef;
 }
 
 footer {
@@ -122,133 +140,57 @@ footer {
     margin-right: 1.25rem;
 }
 
-.items {
-    transition: all .2s ease-in-out;
+.hamburger-button {
+    display: none;
+    background-color: transparent;
+    border: transparent;
 }
 
-.items:hover {
+.hamburger-con {
+    display: none;
+}
 
-    transform: scale(1.25);
+.hamburger-option {
+    display: none;
 }
 
 h1 {
     margin-top: 5rem;
-    font-size: 4.5rem;
-}
-
-.info {
-    margin-top: 3rem;
-    font-size: 1.5rem;    
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.species {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.species p {
-    margin-right: 1rem;
-}
-
-.sex {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-
-}
-
-.sex p {
-    margin-right: 1rem;
-}
-
-.distance {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-
-}
-
-.distance p {
-    margin-right: 1rem;
-}
-
-.zip {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-
-}
-
-.zip p {
-    margin-right: 1rem;
-}
-
-.found {
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
-}
-
-.row1 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.5rem;
-}
-
-.row2 {
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 2rem;
 }
 
 img {
-    width: 20rem;
-    height: 20rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-bottom: 2rem;
+    max-height: 25rem;
 }
 
-
-.search-button {
-    font-size: 2rem;
-    color: #f0f4ef;
-    background-color: #344966;
-    border: none;
-    padding: .5rem;
-    border-radius: 10px;
-    margin-top: 1.5rem;
-    transition: all .2s ease-in-out;
+.general-info {
+    margin-bottom: 2rem;
 }
 
-.search-button:hover {
-    transform: scale(1.15);
+.general-info p {
+    margin-bottom: 1em;
 }
 
-.result-con {
-    display: flex;
-    flex-direction: column;
+.pet-background {
+    margin-bottom: 3rem;
 }
 
+h2 {
+    margin-bottom: 1.5rem;
+}
 
+.contact-box p{
+    margin-bottom: 1rem;
+}
+
+.contact-box {
+    margin-bottom: 5rem;
+}
 
 @media (max-width: 430px){
 
-    img {
-        width: 9rem;
-        height: 10rem;
-        margin-right: 0;
-        margin-left: 0;
-    }
 
-    .result4 {
-        display: none;
-    }
-
-    .result8 {
-        display: none;
-    }
 
     .contact-info {
         font-size: .57rem;
@@ -268,11 +210,6 @@ img {
         font-size: 1.25rem;
     }
 
-    main {
-        position: relative;
-        
-        
-    }
  
     .hamburger-con {
         display: none;
@@ -311,6 +248,8 @@ img {
         margin-left: 1rem;
         font-size: 1.25rem;
     }
+
+
 
     .exit {
         display: flex;
