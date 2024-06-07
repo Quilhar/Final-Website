@@ -1,0 +1,213 @@
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inter-font;
+    
+}
+body {
+    background-color: #f0f4ef;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1821;
+    color: #f0f4ef;
+    padding: 2rem 1rem;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-left i {
+    margin-left: 5em;
+}
+
+.web-name {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links li {
+    margin-right: 5em;
+    font-size: 1.25rem;
+}
+
+.links li button {
+    font-size: 1.25rem;
+    color: #f0f4ef;
+    background-color: #344966;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.items {
+    transition: all .2s ease-in-out;
+}
+
+.items:hover {
+
+    transform: scale(1.25);
+}
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    width: 50%;
+    height: 25%;
+    border: 2px solid black;
+}
+  
+a {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+
+main {
+    text-align: center;
+}
+
+.title {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.title p {
+    font-size: 1.5rem;
+}
+
+.projects div {
+    margin-bottom: 4.5rem;
+}
+
+.project4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project4 img {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 430px){
+
+
+
+    .contact-info {
+        font-size: .57rem;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+        color: #f0f4ef;
+        margin-left: none;
+        margin-right: 2rem;
+        font-size: 1.25rem;
+    }
+
+ 
+    .hamburger-con {
+        display: none;
+        position: absolute;   
+        z-index: 1;
+        background-color: #344966;
+        width: 50%;
+        height: 60%;
+        flex-direction: column;
+        left: 50%;
+        top: 0;
+        border-radius: 10px;
+    
+    }
+
+    .hamburger-option {
+        display: flex;
+        font-size: 1.75rem;
+        margin-left: .5rem;
+    
+    }
+
+    .hamburger-option a {
+        margin-bottom: 15px;
+    }
+
+    .hamburger-button {
+        font-size: 25px;
+    }
+
+    .header-left i {
+        margin-left: 2em;
+    }
+    
+    .web-name {
+        margin-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+
+
+    .exit {
+        display: flex;
+        justify-content: right;
+        margin-bottom: 2rem;
+    }
+    
+    .exit button {
+        color: #f0f4ef;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .hamburger-option button {
+        font-size: 1.25rem;
+        color: #f0f4ef;
+        background-color: #0d1821;
+        border: none;
+        padding: .5rem;
+        border-radius: 10px;
+    }
+}
