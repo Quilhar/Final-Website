@@ -32,9 +32,9 @@ var speciesDrop = document.getElementById("species")
 var sexDrop = document.getElementById("sex")
 var distanceDrop = document.getElementById("distance")
 
-var speciesVal = speciesDrop.options[speciesDrop.selectedIndex].text
-var sexVal = sexDrop.options[sexDrop.selectedIndex].text
-var distanceVal = distanceDrop.options[distanceDrop.selectedIndex].text
+// var speciesVal = speciesDrop.options[speciesDrop.selectedIndex].text
+// var sexVal = sexDrop.options[sexDrop.selectedIndex].text
+// var distanceVal = distanceDrop.options[distanceDrop.selectedIndex].text
 
 const nameBank = ["Parker", "River", "August", "Nova", "Rowan", "Riley", "Avery", "Quinn", "Cameron", "Angel", "Carter", "Dylan", "Ellis", "Scout", "Moss", "Jett", "Sage"]
 const petName1 = document.querySelector(".name1")
@@ -94,15 +94,19 @@ submitBtn.addEventListener('click', () => {
         found.style.display = "none"
     }
 
-    if (speciesDrop.options[speciesDrop.selectedIndex].text == "cat") {
+    let species = speciesDrop.options[speciesDrop.selectedIndex].text
+    let sexVal = sexDrop.options[sexDrop.selectedIndex].text
+    let distanceVal = distanceDrop.options[distanceDrop.selectedIndex].text
+    console.log(sexVal, distanceVal)
+    if (species == "Cat") {
         changeImageCat()
     }
 
-    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "dog") {
+    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "Dog") {
         changeImageDog()
     }
     
-    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "bunny") {
+    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "Bunny") {
         changeImageBunny()
     }
     
@@ -115,6 +119,7 @@ submitBtn.addEventListener('click', () => {
         img6.style.display = "none"
         img7.style.display = "none"
         img8.style.display = "none"
+        console.log("failed")
     }
 
     if (sexVal == "Male") {
@@ -128,7 +133,7 @@ submitBtn.addEventListener('click', () => {
         petSex8.textContent = sexBank[0]
     }
 
-    else if (sexVal == "Male") {
+    else if (sexVal == "Female") {
         petSex1.textContent = sexBank[1]
         petSex2.textContent = sexBank[1]
         petSex3.textContent = sexBank[1]
@@ -143,7 +148,7 @@ submitBtn.addEventListener('click', () => {
         randomSex()
     }
 
-    if (distanceVal == "25") {
+    if (distanceVal == "25 Miles") {
         petDis1.textContent = `${randomInteger(1, 25)} miles`
         petDis2.textContent = `${randomInteger(1, 25)} miles`
         petDis3.textContent = `${randomInteger(1, 25)} miles`
@@ -154,7 +159,7 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 25)} miles`
     }
 
-    if (distanceVal == "100") {
+    if (distanceVal == "100 Miles") {
         petDis1.textContent = `${randomInteger(1, 100)} miles`
         petDis2.textContent = `${randomInteger(1, 100)} miles`
         petDis3.textContent = `${randomInteger(1, 100)} miles`
@@ -165,7 +170,7 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 100)} miles`
     }
 
-    if (distanceVal == "no-limit") {
+    if (distanceVal == "No Limit") {
         petDis1.textContent = `${randomInteger(1, 1000)} miles`
         petDis2.textContent = `${randomInteger(1, 1000)} miles`
         petDis3.textContent = `${randomInteger(1, 1000)} miles`
@@ -176,7 +181,16 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 1000)} miles`
     }
 
-    console.log(speciesDrop.options[speciesDrop.selectedIndex].text)
+    // if (species == "Please Select") {
+    //     results.style.display = "none"
+    //     found.style.display = "none"
+    // }
+    
+    // if (){
+
+    // }
+
+    // console.log(speciesDrop.options[speciesDrop.selectedIndex].text, sexDrop.options[sexDrop.selectedIndex].text, distanceDrop.options[distanceDrop.selectedIndex].text)
 
     randomName()
     randomAge()
@@ -257,3 +271,12 @@ function randomAge() {
 function randomFound() {
     found.textContent = `${randomInteger(1, 75)} Results Found`
 }
+
+petDis1.textContent = `${randomInteger(1, 1000)} miles`
+petDis2.textContent = `${randomInteger(1, 1000)} miles`
+petDis3.textContent = `${randomInteger(1, 1000)} miles`
+petDis4.textContent = `${randomInteger(1, 1000)} miles`
+petDis5.textContent = `${randomInteger(1, 1000)} miles`
+petDis6.textContent = `${randomInteger(1, 1000)} miles`
+petDis7.textContent = `${randomInteger(1, 1000)} miles`
+petDis8.textContent = `${randomInteger(1, 1000)} miles`
