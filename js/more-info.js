@@ -34,8 +34,12 @@ const petSex1 = document.querySelector(".sex1-2")
 
 const petAge1 = document.querySelector(".age1-2")
 
-const petCost = document.querySelector(".cost")
+var petPhoto = document.getElementById(".pet-photo")
 
+
+const cityState = document.querySelector(".city-state")
+const distance = document.querySelector(".distance")
+const cost = document.querySelector(".cost")
 
 
 function randomInteger(min, max) {
@@ -59,9 +63,42 @@ function randomAge() {
 }
 
 function randomCost() {
-    petCost.textContent = `${randomInteger(0, 50)} `
+    petCost.textContent = `${randomInteger(0, 50)}`
+}
+
+function infoRandomizer() {
+    distance.textContent = `Distance: ${randomInteger(1, 75)} miles`
+    cost.textContent = `Cost: $${randomInteger(1, 200)}`
+}
+
+// function randomImage() {
+//     petPhoto.src = `/img/cats/cat${randomInteger(1, 8)}.jpg`
+// }
+
+let curCity 
+let curState
+
+const lonLatKey = '65e3ae9323d14c73bd9b88373bcdd36c'
+let lonLatUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${lonLatKey}`
+
+async function getLocation() {
+    try {
+        const locationResponse = await fetch(lonLatUrl)
+        const locationData = await locationResponse.json()
+        
+        curCity = locationData.city.name
+        curState = locationData.state.name
+        
+        cityState.textContent = `${curCity}, ${curState}`
+
+
+    } catch (error) {
+        console.error(error)
+    }
 }
 
 randomName()
 randomAge()
 randomSex()
+infoRandomizer()
+getLocation()

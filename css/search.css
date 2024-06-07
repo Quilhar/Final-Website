@@ -292,7 +292,7 @@ img {
         display: flex;
         font-size: 1.75rem;
         margin-left: .5rem;
-    
+   
     }
 
     .hamburger-option a {
@@ -335,4 +335,5 @@ img {
         padding: .5rem;
         border-radius: 10px;
     }
+
 }

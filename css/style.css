@@ -146,7 +146,7 @@ main {
     position: absolute;
     left: 0;
     right: 0;
-    top: 71.75%;
+    top: 58%;
     
 }
 
@@ -296,6 +296,10 @@ footer {
 }
 
 @media (max-width: 430px){
+    .pet-button-con button {
+        width: 6rem;
+        height: 6rem;
+    }
 
     .pet-photos {
         flex-direction: column;

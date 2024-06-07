@@ -50,7 +50,6 @@ main {
 }
 
 .items:hover {
-
     transform: scale(1.25);
 }
 
@@ -84,7 +83,7 @@ main {
 
 }
 
-.links li button {
+.links li form button {
     font-size: 1.25rem;
     color: #f0f4ef;
     background-color: #344966;
