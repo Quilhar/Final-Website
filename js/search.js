@@ -25,12 +25,16 @@ exitBtn.addEventListener('click', () => {
 
 const submitBtn = document.querySelector(".search-button")
 const results = document.querySelector(".result-con")
-
+const found = document.querySelector(".found")
 
 
 var speciesDrop = document.getElementById("species")
 var sexDrop = document.getElementById("sex")
 var distanceDrop = document.getElementById("distance")
+
+var speciesVal = speciesDrop.options[speciesDrop.selectedIndex].text
+var sexVal = sexDrop.options[sexDrop.selectedIndex].text
+var distanceVal = distanceDrop.options[distanceDrop.selectedIndex].text
 
 const nameBank = ["Parker", "River", "August", "Nova", "Rowan", "Riley", "Avery", "Quinn", "Cameron", "Angel", "Carter", "Dylan", "Ellis", "Scout", "Moss", "Jett", "Sage"]
 const petName1 = document.querySelector(".name1")
@@ -61,6 +65,15 @@ const petAge6 = document.querySelector(".age6")
 const petAge7 = document.querySelector(".age7")
 const petAge8 = document.querySelector(".age8")
 
+const petDis1 = document.querySelector(".distance1")
+const petDis2 = document.querySelector(".distance2")
+const petDis3 = document.querySelector(".distance3")
+const petDis4 = document.querySelector(".distance4")
+const petDis5 = document.querySelector(".distance5")
+const petDis6 = document.querySelector(".distance6")
+const petDis7 = document.querySelector(".distance7")
+const petDis8 = document.querySelector(".distance8")
+
 var img1 = document.getElementById("image1");
 var img2 = document.getElementById("image2");
 var img3 = document.getElementById("image3");
@@ -74,19 +87,112 @@ submitBtn.addEventListener('click', () => {
     
     if (results.style.display == "none"){
         results.style.display = "flex"
-        
+        found.style.display = "block"
     }
-    else{
+    else {
         results.style.display = "none"
+        found.style.display = "none"
     }
 
+    if (speciesDrop.options[speciesDrop.selectedIndex].text == "cat") {
+        changeImageCat()
+    }
 
+    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "dog") {
+        changeImageDog()
+    }
+    
+    else if (speciesDrop.options[speciesDrop.selectedIndex].text == "bunny") {
+        changeImageBunny()
+    }
+    
+    else {
+        img1.style.display = "none"
+        img2.style.display = "none"
+        img3.style.display = "none"
+        img4.style.display = "none"
+        img5.style.display = "none"
+        img6.style.display = "none"
+        img7.style.display = "none"
+        img8.style.display = "none"
+    }
+
+    if (sexVal == "Male") {
+        petSex1.textContent = sexBank[0]
+        petSex2.textContent = sexBank[0]
+        petSex3.textContent = sexBank[0]
+        petSex4.textContent = sexBank[0]
+        petSex5.textContent = sexBank[0]
+        petSex6.textContent = sexBank[0]
+        petSex7.textContent = sexBank[0]
+        petSex8.textContent = sexBank[0]
+    }
+
+    else if (sexVal == "Male") {
+        petSex1.textContent = sexBank[1]
+        petSex2.textContent = sexBank[1]
+        petSex3.textContent = sexBank[1]
+        petSex4.textContent = sexBank[1]
+        petSex5.textContent = sexBank[1]
+        petSex6.textContent = sexBank[1]
+        petSex7.textContent = sexBank[1]
+        petSex8.textContent = sexBank[1]
+    }
+
+    else {
+        randomSex()
+    }
+
+    if (distanceVal == "25") {
+        petDis1.textContent = `${randomInteger(1, 25)} miles`
+        petDis2.textContent = `${randomInteger(1, 25)} miles`
+        petDis3.textContent = `${randomInteger(1, 25)} miles`
+        petDis4.textContent = `${randomInteger(1, 25)} miles`
+        petDis5.textContent = `${randomInteger(1, 25)} miles`
+        petDis6.textContent = `${randomInteger(1, 25)} miles`
+        petDis7.textContent = `${randomInteger(1, 25)} miles`
+        petDis8.textContent = `${randomInteger(1, 25)} miles`
+    }
+
+    if (distanceVal == "100") {
+        petDis1.textContent = `${randomInteger(1, 100)} miles`
+        petDis2.textContent = `${randomInteger(1, 100)} miles`
+        petDis3.textContent = `${randomInteger(1, 100)} miles`
+        petDis4.textContent = `${randomInteger(1, 100)} miles`
+        petDis5.textContent = `${randomInteger(1, 100)} miles`
+        petDis6.textContent = `${randomInteger(1, 100)} miles`
+        petDis7.textContent = `${randomInteger(1, 100)} miles`
+        petDis8.textContent = `${randomInteger(1, 100)} miles`
+    }
+
+    if (distanceVal == "no-limit") {
+        petDis1.textContent = `${randomInteger(1, 1000)} miles`
+        petDis2.textContent = `${randomInteger(1, 1000)} miles`
+        petDis3.textContent = `${randomInteger(1, 1000)} miles`
+        petDis4.textContent = `${randomInteger(1, 1000)} miles`
+        petDis5.textContent = `${randomInteger(1, 1000)} miles`
+        petDis6.textContent = `${randomInteger(1, 1000)} miles`
+        petDis7.textContent = `${randomInteger(1, 1000)} miles`
+        petDis8.textContent = `${randomInteger(1, 1000)} miles`
+    }
+
+    console.log(speciesDrop.options[speciesDrop.selectedIndex].text)
 
     randomName()
     randomAge()
-    randomSex()
+    randomFound()
 })
 
+function changeImageCat() {
+    img1.src = "/img/cats/cat1.jpg"
+    img2.src = "/img/cats/cat2.jpg"
+    img3.src = "/img/cats/cat3.jpg"
+    img4.src = "/img/cats/cat4.jpg"
+    img5.src = "/img/cats/cat5.jpg"
+    img6.src = "/img/cats/cat6.jpg"
+    img7.src = "/img/cats/cat7.jpg"
+    img8.src = "/img/cats/cat8.jpg"
+}
 
 function changeImageDog() {
     img1.src = "/img/dogs/dog1.jpg"
@@ -148,8 +254,6 @@ function randomAge() {
 
 }
 
-
-
-randomName()
-randomAge()
-randomSex()
+function randomFound() {
+    found.textContent = `${randomInteger(1, 75)} Results Found`
+}

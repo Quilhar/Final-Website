@@ -227,7 +227,7 @@ img {
 }
 
 .result-con {
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
