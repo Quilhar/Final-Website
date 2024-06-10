@@ -87,13 +87,9 @@ img {
 }
   
 a {
-    font-size: 1.25rem;
-    font-style: italic;
-}
 
-p {
-    font-size: 1.25rem;
-    font-style: italic;
+    text-decoration: none;
+    color: #f0f4ef;
 }
 
 
@@ -120,14 +116,73 @@ main {
     flex-direction: column;
 }
 
-.project4 img {
-    margin-bottom: 1.5rem;
+
+footer {
+    display: flex;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #0d1821;
+    color: #f0f4ef;
+    align-items: center;
+    justify-content: center;
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+}
+
+.number {
+    margin-right: 1.25rem;
+}
+
+.copyright {
+    margin-right: 1.25rem;
+}
+
+.hamburger-button {
+    display: none;
+    background-color: transparent;
+    border: transparent;
+}
+
+.hamburger-con {
+    display: none;
+}
+
+.hamburger-option {
+    display: none;
+}
+
+.pet-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project4 a {
+    color: black;
+}
+
+.project-subtext {
+    font-style: italic;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.title p {
+    font-style: italic;
+}
 @media (max-width: 430px){
 
+    .title p {
+        font-size: 1.25rem;
+    }
 
-
+    .project-subtext {
+        font-size: 1rem;
+    }
     .contact-info {
         font-size: .57rem;
         flex-direction: row;
@@ -184,8 +239,6 @@ main {
         margin-left: 1rem;
         font-size: 1.25rem;
     }
-
-
 
     .exit {
         display: flex;

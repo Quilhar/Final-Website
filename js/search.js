@@ -110,17 +110,6 @@ submitBtn.addEventListener('click', () => {
         changeImageBunny()
     }
     
-    else {
-        img1.style.display = "none"
-        img2.style.display = "none"
-        img3.style.display = "none"
-        img4.style.display = "none"
-        img5.style.display = "none"
-        img6.style.display = "none"
-        img7.style.display = "none"
-        img8.style.display = "none"
-        console.log("failed")
-    }
 
     if (sexVal == "Male") {
         petSex1.textContent = sexBank[0]
@@ -159,7 +148,7 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 25)} miles`
     }
 
-    if (distanceVal == "100 Miles") {
+    else if (distanceVal == "100 Miles") {
         petDis1.textContent = `${randomInteger(1, 100)} miles`
         petDis2.textContent = `${randomInteger(1, 100)} miles`
         petDis3.textContent = `${randomInteger(1, 100)} miles`
@@ -170,7 +159,7 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 100)} miles`
     }
 
-    if (distanceVal == "No Limit") {
+    else {
         petDis1.textContent = `${randomInteger(1, 1000)} miles`
         petDis2.textContent = `${randomInteger(1, 1000)} miles`
         petDis3.textContent = `${randomInteger(1, 1000)} miles`
@@ -181,14 +170,20 @@ submitBtn.addEventListener('click', () => {
         petDis8.textContent = `${randomInteger(1, 1000)} miles`
     }
 
-    // if (species == "Please Select") {
-    //     results.style.display = "none"
-    //     found.style.display = "none"
-    // }
+    if (species == "Please Select") {
+        results.style.display = "none"
+        found.style.display = "none"
+    }
     
-    // if (){
+    if (sexVal == "Please Select"){
+        results.style.display = "none"
+        found.style.display = "none"
+    }
 
-    // }
+    if (distanceVal == "Please Select") {
+        results.style.display = "none"
+        found.style.display = "none"
+    }
 
     // console.log(speciesDrop.options[speciesDrop.selectedIndex].text, sexDrop.options[sexDrop.selectedIndex].text, distanceDrop.options[distanceDrop.selectedIndex].text)
 
@@ -269,14 +264,14 @@ function randomAge() {
 }
 
 function randomFound() {
-    found.textContent = `${randomInteger(1, 75)} Results Found`
+    found.textContent = `${randomInteger(8, 75)} Results Found`
 }
 
-petDis1.textContent = `${randomInteger(1, 1000)} miles`
-petDis2.textContent = `${randomInteger(1, 1000)} miles`
-petDis3.textContent = `${randomInteger(1, 1000)} miles`
-petDis4.textContent = `${randomInteger(1, 1000)} miles`
-petDis5.textContent = `${randomInteger(1, 1000)} miles`
-petDis6.textContent = `${randomInteger(1, 1000)} miles`
-petDis7.textContent = `${randomInteger(1, 1000)} miles`
-petDis8.textContent = `${randomInteger(1, 1000)} miles`
+// petDis1.textContent = `${randomInteger(1, 1000)} miles`
+// petDis2.textContent = `${randomInteger(1, 1000)} miles`
+// petDis3.textContent = `${randomInteger(1, 1000)} miles`
+// petDis4.textContent = `${randomInteger(1, 1000)} miles`
+// petDis5.textContent = `${randomInteger(1, 1000)} miles`
+// petDis6.textContent = `${randomInteger(1, 1000)} miles`
+// petDis7.textContent = `${randomInteger(1, 1000)} miles`
+// petDis8.textContent = `${randomInteger(1, 1000)} miles`
