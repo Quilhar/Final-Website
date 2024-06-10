@@ -166,6 +166,8 @@ footer {
     padding-right: 15rem;
     font-size: 1.75rem;
     font-weight: 500;
+    line-height: 2.5rem;
+    /* background-color: #0d1821; */
 }
 
 .signature {
