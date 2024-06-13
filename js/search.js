@@ -193,14 +193,14 @@ submitBtn.addEventListener('click', () => {
 })
 
 function changeImageCat() {
-    img1.src = "/img/cats/cat1.jpg"
-    img2.src = "/img/cats/cat2.jpg"
-    img3.src = "/img/cats/cat3.jpg"
-    img4.src = "/img/cats/cat4.jpg"
-    img5.src = "/img/cats/cat5.jpg"
-    img6.src = "/img/cats/cat6.jpg"
-    img7.src = "/img/cats/cat7.jpg"
-    img8.src = "/img/cats/cat8.jpg"
+    img1.src = "../img/cats/cat1.jpg"
+    img2.src = "../img/cats/cat2.jpg"
+    img3.src = "../img/cats/cat3.jpg"
+    img4.src = "../img/cats/cat4.jpg"
+    img5.src = "../img/cats/cat5.jpg"
+    img6.src = "../img/cats/cat6.jpg"
+    img7.src = "../img/cats/cat7.jpg"
+    img8.src = "../img/cats/cat8.jpg"
 }
 
 function changeImageDog() {
