@@ -204,14 +204,14 @@ function changeImageCat() {
 }
 
 function changeImageDog() {
-    img1.src = "/img/dogs/dog1.jpg"
-    img2.src = "/img/dogs/dog2.jpg"
-    img3.src = "/img/dogs/dog3.jpg"
-    img4.src = "/img/dogs/dog4.jpg"
-    img5.src = "/img/dogs/dog5.jpg"
-    img6.src = "/img/dogs/dog6.jpg"
-    img7.src = "/img/dogs/dog7.jpg"
-    img8.src = "/img/dogs/dog8.jpg"
+    img1.src = "./img/dogs/dog1.jpg"
+    img2.src = "./img/dogs/dog2.jpg"
+    img3.src = "./img/dogs/dog3.jpg"
+    img4.src = "./img/dogs/dog4.jpg"
+    img5.src = "./img/dogs/dog5.jpg"
+    img6.src = "./img/dogs/dog6.jpg"
+    img7.src = "./img/dogs/dog7.jpg"
+    img8.src = "./img/dogs/dog8.jpg"
 }
 
 function changeImageBunny() {
