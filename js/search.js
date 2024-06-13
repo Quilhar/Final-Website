@@ -160,14 +160,14 @@ submitBtn.addEventListener('click', () => {
     }
 
     else {
-        petDis1.textContent = `${randomInteger(1, 1000)} miles`
-        petDis2.textContent = `${randomInteger(1, 1000)} miles`
-        petDis3.textContent = `${randomInteger(1, 1000)} miles`
-        petDis4.textContent = `${randomInteger(1, 1000)} miles`
-        petDis5.textContent = `${randomInteger(1, 1000)} miles`
-        petDis6.textContent = `${randomInteger(1, 1000)} miles`
-        petDis7.textContent = `${randomInteger(1, 1000)} miles`
-        petDis8.textContent = `${randomInteger(1, 1000)} miles`
+        petDis1.textContent = `${randomInteger(1, 600)} miles`
+        petDis2.textContent = `${randomInteger(1, 600)} miles`
+        petDis3.textContent = `${randomInteger(1, 600)} miles`
+        petDis4.textContent = `${randomInteger(1, 600)} miles`
+        petDis5.textContent = `${randomInteger(1, 600)} miles`
+        petDis6.textContent = `${randomInteger(1, 600)} miles`
+        petDis7.textContent = `${randomInteger(1, 600)} miles`
+        petDis8.textContent = `${randomInteger(1, 600)} miles`
     }
 
     if (species == "Please Select") {
@@ -193,7 +193,7 @@ submitBtn.addEventListener('click', () => {
 })
 
 function changeImageCat() {
-    img1.src = "../img/cats/cat1.jpg"
+    img1.src = "../img/dogs/dog1.jpg"
     img2.src = "../img/cats/cat2.jpg"
     img3.src = "../img/cats/cat3.jpg"
     img4.src = "../img/cats/cat4.jpg"
