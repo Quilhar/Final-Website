@@ -193,7 +193,7 @@ submitBtn.addEventListener('click', () => {
 })
 
 function changeImageCat() {
-    img1.src = "../img/dogs/dog1.jpg"
+    img1.src = "../img/cats/cat1.jpg"
     img2.src = "../img/cats/cat2.jpg"
     img3.src = "../img/cats/cat3.jpg"
     img4.src = "../img/cats/cat4.jpg"
